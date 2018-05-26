@@ -12,19 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('login');
-});
-
-Route::get('/register_2', function () {
-    return view('Sign_Up');
-});
-
-Route::get('/beranda', function () {
-    return view('facebook');
+    return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::post('/register_action', 'RegisterController@store')->name('register_action');
-Route::post('/login_check', 'LoginController@loginn')->name('loginn');
+
+Route::get('/post/', 'PostController@index')->name('post.index');
+Route::get('/post/create', 'PostController@create')->name('post.create');
+Route::post('/post/create', 'PostController@store')->name('post.store');
