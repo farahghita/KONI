@@ -6,13 +6,13 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Category;
 
-class PostController extends Controller
+class FacebookController extends Controller
 {
     public function index()
     {
         $posts = Post::all();
 
-        return view('post.index', compact('posts'));
+        return view('facebook', compact('posts'));
     }
     public function create()
     {

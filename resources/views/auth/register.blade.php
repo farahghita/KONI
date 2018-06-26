@@ -85,7 +85,7 @@
 
                 </div>
 
-                <a href="#" class="form-log-in-with-existing">Sudah punya akun? Masuk disini &rarr;</a>
+                <a href="{{ route('facebook') }}" class="form-log-in-with-existing">Sudah punya akun? Masuk disini &rarr;</a>
 
             </div>
 
