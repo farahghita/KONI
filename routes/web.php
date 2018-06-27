@@ -27,4 +27,6 @@ Route::get('/post/create', 'PostController@create')->name('post.create');
 Route::get('/post/edit', 'PostController@edit')->name('post.edit');
 Route::post('/post/create', 'PostController@store')->name('post.store');
 Route::get('/facebook/', 'FacebookController@index')->name('facebook');
-
+$s = 'social.';
+Route::get('/social/redirect/{provider}',   ['as' => $s . 'redirect',   'uses' => 'Auth\SocialController@getSocialRedirect']);
+Route::get('/social/handle/{provider}',     ['as' => $s . 'handle',     'uses' => 'Auth\SocialController@getSocialHandle']);
