@@ -18,8 +18,13 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profil', 'ProfilController@index')->name('profil');
+Route::get('/editprofil', 'ProfilController@edit')->name('editprofil');
+
 
 Route::get('/post/', 'PostController@index')->name('post.index');
 Route::get('/post/create', 'PostController@create')->name('post.create');
+Route::get('/post/edit', 'PostController@edit')->name('post.edit');
 Route::post('/post/create', 'PostController@store')->name('post.store');
 Route::get('/facebook/', 'FacebookController@index')->name('facebook');
+
