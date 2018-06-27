@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Daftar-KONI</title>
+	<title>Edit Profil-KONI</title>
 
 	<link rel="stylesheet" href="assets/demo.css">
 	<link rel="stylesheet" href="assets/form-register.css">
@@ -26,7 +26,7 @@
                 <div class="form-white-background">
 
                     <div class="form-title-row">
-                        <h1>Buat akun baru</h1>
+                        <h1>Edit Profil</h1>
                     </div>
 
                     <div class="form-row">
@@ -56,48 +56,50 @@
 
                     <div class="form-row">
                         <label>
-                            <span>Password</span>
+                            <span>Pekerjaan</span>
                             <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
-                            @if ($errors->has('password'))
-                                <span class="invalid-feedback">
-                                    <strong>{{ $errors->first('password') }}</strong>
-                                </span>
-                            @endif
                         </label>
                     </div>
 
                     <div class="form-row">
                       <label>
-                      <span> Confirm Password</span>
+                      <span> Alamat</span>
                       <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                     </label>
                     </div>
-                    <div class="form-row">
-                        <label class="form-checkbox">
-                            <input type="checkbox" name="checkbox" checked>
-                            <span>Saya setuju dengan <a href="#">syarat dan ketentuan</a></span>
-                        </label>
-                    </div>
 
                     <div class="form-row">
-                        <button type="submit">{{ __('Daftar') }}</button>
+                      <label>
+                      <span> Tempat Tanggal Lahir</span>
+                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                    </label>
+                    </div>
+
+
+                    <div class="form-row">
+                        <button type="submit">{{ __('ubah') }}</button>
                     </div>
 
                 </div>
 
-                <a href="{{ route('facebook') }}" class="form-log-in-with-existing">Sudah punya akun? Masuk disini &rarr;</a>
 
             </div>
 
             <div class="form-sign-in-with-social">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
 
-                <div class="form-row form-title-row">
-                    <span class="form-subtitle">Masuk dengan</span>
-                </div>
 
-                <a href="#" class="form-google-button">Google</a>
-                <a href="#" class="form-facebook-button">Facebook</a>
-                <a href="#" class="form-twitter-button">Twitter</a>
+                <a href="#" class="form-google-button">batal</a>
 
             </div>
 
