@@ -11,24 +11,21 @@ class FacebookController extends Controller
     public function index()
     {
         $posts = Post::all();
-
-        return view('facebook', compact('posts'));
-    }
-    public function create()
-    {
         $categories = Category::all();
-        return view('post.create', compact('categories'));
+        return view('facebook', compact('posts', 'categories'));
     }
 
-    public function store()
+    public function edit(Post $post)
     {
-        Post::create([
-            'title' => request('title'),
-            'description' => request('description'),
-            'category_id' => request('category_id'),
+      echo $post->id;
+      //$categories = Category::all();
 
-        ]);
-
-        return redirect('post');
+      //return view('facebook.edit', compact('post', 'categories'));
     }
+    public function destroy(Post $post)
+      {
+        $post->delete();
+        return redirect()->route('facebook');
+      }
+    
 }

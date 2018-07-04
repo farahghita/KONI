@@ -20,6 +20,12 @@ class PostController extends Controller
         return view('post.create', compact('categories'));
     }
 
+    public function edit()
+    {
+        return view('post.edit');
+    }
+
+
     public function store()
     {
         Post::create([
@@ -29,6 +35,6 @@ class PostController extends Controller
 
         ]);
 
-        return redirect('post');
+        return redirect('facebook');
     }
 }
