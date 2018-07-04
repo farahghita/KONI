@@ -29,6 +29,14 @@
                         <h1>Edit Profil</h1>
                     </div>
 
+                         <div class="avatar">
+                            <img src="cover/joko.jpg" class="img-thumbnail img-profile">
+                        </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+
                     <div class="form-row">
                         <label>
                             <span>Nama</span>
@@ -98,6 +106,35 @@
                 <br>
                 <br>
 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
 
                 <a href="#" class="form-google-button">batal</a>
 
