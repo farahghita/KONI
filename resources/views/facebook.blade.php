@@ -69,8 +69,12 @@
 											 <div class="pull-right"> <div class="dropdown">
 															<a href="#"  class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i></a>
 																<ul class="dropdown-menu">
-																	<li><a href="">edit</a></li>
-																	<li><a href="">hapus</a></li>
+																	<li><a href="{{ url('/facebook/'.$post->id.'/edit')}}">edit</a></li>
+																	<form class="" action="{{ route('facebook.destroy', $post) }}" method="post">
+																	{{ csrf_field() }}
+																	{{ method_field('DELETE') }}
+																	<button type="submit"> hapus </button>
+																</form>
 																</ul>
 																</div>
 																</div>
