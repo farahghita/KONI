@@ -29,6 +29,14 @@
                         <h1>Edit Profil</h1>
                     </div>
 
+                         <div class="avatar">
+                            <img src="cover/joko.jpg" class="img-thumbnail img-profile">
+                        </div>
+                    <br>
+                    <br>
+                    <br>
+                    
+
                     <div class="form-row">
                         <label>
                             <span>Nama</span>
@@ -57,14 +65,14 @@
                     <div class="form-row">
                         <label>
                             <span>Pekerjaan</span>
-                            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                            <input id="job" type="text" class="form-control{{ $errors->has('job') ? ' is-invalid' : '' }}" job="job" value="{{ old('job') }}" required autofocus>
                         </label>
                     </div>
 
                     <div class="form-row">
                       <label>
                       <span> Alamat</span>
-                      <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                      <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" address="address" value="{{ old('address') }}" required autofocus>
                     </label>
                     </div>
 
@@ -98,6 +106,35 @@
                 <br>
                 <br>
 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
 
                 <a href="#" class="form-google-button">batal</a>
 
